@@ -1,6 +1,6 @@
 FROM python:3.6.5-stretch
 
-ENV DEBIAN_URL "http://ftp.us.debian.org/debian"
+ENV DEBIAN_URL "http://mirrors.aliyun.com/debian"
 
 RUN echo "deb $DEBIAN_URL testing main contrib non-free" >> /etc/apt/sources.list \
   && apt-get update                                             \
